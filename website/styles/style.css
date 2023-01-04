@@ -116,6 +116,10 @@ body {
   margin-top: 17%;
 }
 
+footer {
+  display: none;
+}
+
 body {
   height: 100vh;
   margin: 0;
