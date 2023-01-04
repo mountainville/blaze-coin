@@ -1,14 +1,18 @@
-@import "./whitepaper";
+$lightPink: #DC4E76;
+$pink: #CC4B93;
+$purple: #A946BE;
+$blue: #5C4AE4;
+$darkBlue: #35375A;
 
+@import "./whitepaper";
 @import "./teampage/team";
 
 body{
-    //background-color: green;
+    //background-color:$purple ;
     height: 100vh;
     margin: 0;
     //font-family: ;
 }
-
 h1 {
     font-size: 5em;
 }
