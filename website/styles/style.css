@@ -1,1 +1,56 @@
-body{margin:0px}#wp-articleHeading{text-shadow:2px 2px #000;background-color:#31203a;max-width:-webkit-max-content;max-width:-moz-max-content;max-width:max-content;max-height:-webkit-max-content;max-height:-moz-max-content;max-height:max-content}.wp-bookshelfBg{height:-webkit-min-content;height:-moz-min-content;height:min-content;background-image:url(../images/bookshelfCompressed2.2MB.jpg);background-size:cover}.wp-articleContent{border:3px #000 solid;padding:10px;border-radius:50px;background-color:#fff;color:#613f75}.wp-textDiv{display:none}.wp-article{background-color:rgba(97,63,117,.6588235294);color:#e5c3d1;padding:10px;padding-left:100px;padding-right:300px;padding-bottom:100px}.wp-article h1{font-size:5em;font-family:"Franklin Gothic Medium","Arial Narrow",Arial,sans-serif;text-decoration:underline overline}.wp-article h2{font-size:2em;text-decoration:underline}.wp-article h3{font-size:1.5em;text-decoration:underline;cursor:pointer}.wp-article h4{font-size:1.2em;text-decoration:underline;text-indent:40px}.wp-article .h4p{margin-left:40px}.wp-article p{padding-left:50px;padding-right:100px;font-family:"Trebuchet MS","Lucida Sans Unicode","Lucida Grande","Lucida Sans",Arial,sans-serif;font-size:1.2em}h1{font-size:5em}/*# sourceMappingURL=style.css.map */
+
+#meetTeamTxt {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 2.5rem;
+}
+
+#line {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-bottom: 2%;
+}
+
+#content {
+  display: block;
+  margin: auto;
+  height: 80%;
+  width: 80%;
+}
+
+#profilePics {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70%;
+}
+
+.profileBox {
+  height: 90%;
+  width: 18%;
+  padding: 20px;
+  border-radius: 5%;
+  text-align: center;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.profileBox img {
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+}
+.profileBox h3 {
+  margin-top: 17%;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5em;
+}/*# sourceMappingURL=style.css.map */
+
