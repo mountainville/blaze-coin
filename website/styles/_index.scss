@@ -1,0 +1,121 @@
+$lightPink: #dc4e76;
+$pink: #cc4b93;
+$purple: #a946be;
+$blue: #5c4ae4;
+$darkBlue: #35375a;
+// Global
+.ix-body {
+  background-color: #bfbff0;
+}
+
+.ix-full-height {
+  padding: 3rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.ix-hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transition: ease-in 1s;
+}
+.ix-hidden.ix-translateY {
+  transform: translateY(+100%);
+}
+
+.ix-hidden.ix-translateX {
+  transform: translateX(+100%);
+}
+
+.ix-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transform: translateX(0);
+}
+
+// Start Page
+.ix-start-page {
+  background-image: url("../images/start-page.png");
+  background-size: cover;
+}
+
+.ix-blur {
+  border-radius: 10px;
+  backdrop-filter: blur(20px) contrast(70%) brightness(150%);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ix-logo-img {
+  width: fit-content;
+}
+.ix-slogan {
+  width: fit-content;
+}
+
+.arrow-down {
+  position: relative;
+  top: 0px;
+  transition: top 0.5s;
+  color: #dc4e76;
+}
+.arrow-down:hover {
+  top: 12px;
+}
+
+.custom-shape-divider-bottom-1672855748 {
+  position: absolute;
+  bottom: -8rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1672855748 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1672855748 .shape-fill {
+  fill: #bfbff0;
+}
+
+// about page
+.ix-full-height.ix-text-page {
+  flex-direction: row;
+  min-height: 80vh;
+}
+.ix-about {
+  background-color: #dc4e76;
+  border-radius: 1rem;
+  padding: 3rem;
+  height: fit-content;
+}
+
+.ix-about-h2 {
+  font-size: 4rem;
+}
+
+.ix-coin {
+  background-color: #5c4ae4;
+  border-radius: 1rem;
+  padding: 3rem;
+  height: fit-content;
+}
+
+.ix-coin-img {
+  height: 15rem;
+  width: auto;
+}

@@ -1,14 +1,33 @@
 @import "./whitepaper";
-
+@import "./index";
 @import "./teampage/team";
 
-body{
-    //background-color: green;
-    height: 100vh;
-    margin: 0;
-    //font-family: ;
+$lightPink: #dc4e76;
+$pink: #cc4b93;
+$purple: #a946be;
+$blue: #5c4ae4;
+$darkBlue: #35375a;
+
+body {
+  //background-color: green;
+  height: 100vh;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Syne", sans-serif;
 }
 
 h1 {
-    font-size: 5em;
+  font-size: 5em;
+}
+
+html {
+  scroll-behavior: smooth;
 }
