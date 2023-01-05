@@ -266,13 +266,18 @@ footer {
   margin-top: 17%;
 }
 
+#rmp-body {
+  background-image: url("/website/images/roadmap.webp");
+  background-size: cover;
+}
+
 /* Timeline Container */
 .rmp-timeline {
   padding: 10px;
 }
 
 #rmp-outer {
-  border: solid 1px black;
+  background-color: rgba(250, 249, 249, 0.488);
   border-radius: 5%;
   width: 40%;
   margin-left: 30%;
@@ -284,7 +289,6 @@ footer {
 .rmp-card {
   position: relative;
   max-width: 5800px;
-  background: linear-gradient(45deg, rgb(25, 168, 248) 0%, rgb(0, 0, 70) 100%);
 }
 
 /* setting padding based on even or odd */
@@ -301,7 +305,7 @@ footer {
   content: "";
   position: absolute;
   width: 50%;
-  border: solid #dc4e76;
+  border: solid white;
 }
 
 /* Setting the border of top, bottom, left */
@@ -338,15 +342,14 @@ footer {
 .rmp-info {
   display: flex;
   flex-direction: column;
-  background: #333;
-  color: gray;
+  background: linear-gradient(45deg, #a946be 0%, #35375a 100%);
   border-radius: 25px;
   padding: 10px;
 }
 
 /* Title of the card */
 .rmp-title {
-  color: #dc4e76;
+  color: white;
   position: relative;
   margin-left: 5%;
 }
@@ -355,11 +358,11 @@ footer {
 .rmp-title::before {
   content: "";
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background: white;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(45deg, #a946be 0%, #35375a 100%);
   border-radius: 999px;
-  border: 3px solid #dc4e76;
+  border: 2px solid white;
 }
 
 /* text right if the card is even  */
@@ -369,7 +372,7 @@ footer {
 
 /* setting dot to the left if the card is odd */
 .rmp-card:nth-child(odd) > .rmp-info > .rmp-title::before {
-  left: -51px;
+  left: -55px;
 }
 
 /* setting dot to the right if the card is odd */

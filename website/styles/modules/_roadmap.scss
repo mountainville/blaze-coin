@@ -1,10 +1,15 @@
+#rmp-body {
+  background-image: url("/website/images/roadmap.webp");
+  background-size: cover;
+}
 /* Timeline Container */
 .rmp-timeline {
   //margin: 20px auto;
   padding: 10px;
 }
 #rmp-outer {
-  border: solid 1px black;
+  background-color: rgba(250, 249, 249, 0.488);
+  //border: solid 1px black;
   border-radius: 5%;
   width: 40%;
   margin-left: 30%;
@@ -15,11 +20,6 @@
 .rmp-card {
   position: relative;
   max-width: 5800px;
-  background: linear-gradient(
-    45deg,
-    rgba(25, 168, 248, 1) 0%,
-    rgba(0, 0, 70, 1) 100%
-  );
 }
 
 /* setting padding based on even or odd */
@@ -34,7 +34,7 @@
   content: "";
   position: absolute;
   width: 50%;
-  border: solid $lightPink;
+  border: solid white;
 }
 
 /* Setting the border of top, bottom, left */
@@ -61,12 +61,6 @@
   border-top-left-radius: 0;
 }
 
-// /* Removing the border if it is the last card  and it's odd */
-// .rmp-card:last-child:nth-child(odd)::before {
-//   border-bottom: 0;
-//   border-bottom-left-radius: 0;
-// }
-
 /* Removing the border if it is the last card  and it's even */
 .rmp-card:last-child:nth-child(even)::before {
   border-bottom: 0;
@@ -77,15 +71,18 @@
 .rmp-info {
   display: flex;
   flex-direction: column;
-  background: #333;
-  color: gray;
+  background: linear-gradient(
+    45deg,
+    $purple 0%,
+    $darkBlue 100%
+  );
   border-radius: 25px;
   padding: 10px;
 }
 
 /* Title of the card */
 .rmp-title {
-  color: $lightPink;
+  color: white;
   position: relative;
   margin-left: 5%;
 }
@@ -94,11 +91,15 @@
 .rmp-title::before {
   content: "";
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background: white;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(
+    45deg,
+    $purple 0%,
+    $darkBlue 100%
+  );
   border-radius: 999px;
-  border: 3px solid $lightPink;
+  border: 2px solid white;
 }
 
 /* text right if the card is even  */
@@ -108,7 +109,7 @@
 
 /* setting dot to the left if the card is odd */
 .rmp-card:nth-child(odd) > .rmp-info > .rmp-title::before {
-  left: -51px;
+  left: -55px;
 }
 
 /* setting dot to the right if the card is odd */
