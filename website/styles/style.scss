@@ -1,19 +1,32 @@
-$lightPink: #DC4E76;
-$pink: #CC4B93;
-$purple: #A946BE;
-$blue: #5C4AE4;
-$darkBlue: #35375A;
+$lightPink: #dc4e76;
+$pink: #cc4b93;
+$purple: #a946be;
+$blue: #5c4ae4;
+$darkBlue: #35375a;
 
+// Import for Whitepaper Page
 @import "./whitepaper";
+@import "./index";
 @import "./teampage/team";
 @import "./roadmap";
 
-body{
-    //background-color:$purple ;
-    height: 100vh;
-    margin: 0;
-    //font-family: ;
+body {
+  //background-color: $purple;
+  height: 100vh;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
-h1 {
-    font-size: 5em;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Syne", sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
 }
