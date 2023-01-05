@@ -5,10 +5,10 @@ $blue: #5c4ae4;
 $darkBlue: #35375a;
 
 // Import for Whitepaper Page
-@import "./whitepaper";
-@import "./index";
-@import "./teampage/team";
-@import "./roadmap";
+@import "./modules/whitepaper";
+@import "./modules/index";
+@import "./modules/team";
+@import "./modules/roadmap";
 
 body {
   //background-color: $purple;
