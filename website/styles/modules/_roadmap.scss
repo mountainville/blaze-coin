@@ -15,6 +15,11 @@
 .rmp-card {
   position: relative;
   max-width: 5800px;
+  background: linear-gradient(
+    45deg,
+    rgba(25, 168, 248, 1) 0%,
+    rgba(0, 0, 70, 1) 100%
+  );
 }
 
 /* setting padding based on even or odd */
