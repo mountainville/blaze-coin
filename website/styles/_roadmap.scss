@@ -1,0 +1,114 @@
+
+  /* Timeline Container */
+  .rmp-timeline {
+    //margin: 20px auto;
+    padding: 10px;
+  }
+  #rmp-outer{
+    border: solid 1px black;
+    border-radius: 5%;
+    width: 40%;
+    margin-left: 30%;
+    padding: 15px;
+    margin-top: 3.5%;
+  }
+  /* Card container */
+  .rmp-card {
+    position: relative;
+    max-width: 5800px;
+    
+  }
+  
+  /* setting padding based on even or odd */
+  .rmp-card:nth-child(odd) {
+    padding: 10px 0 10px 10px;
+  }
+  .rmp-card:nth-child(even) {
+    padding: 10px 10px 10px 0;
+  }
+  /* Global ::before */
+  .rmp-card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid $lightPink;
+  }
+  
+  /* Setting the border of top, bottom, left */
+  .rmp-card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.9px;
+    bottom: -4.9px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  /* Setting the border of top, bottom, right */
+  .rmp-card:nth-child(even)::before {
+    right: -5px;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+  }
+  
+  /* Removing the border if it is the first card */
+  .rmp-card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+  }
+  
+  // /* Removing the border if it is the last card  and it's odd */
+  // .rmp-card:last-child:nth-child(odd)::before {
+  //   border-bottom: 0;
+  //   border-bottom-left-radius: 0;
+ // }
+  
+  /* Removing the border if it is the last card  and it's even */
+  .rmp-card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  /* Information about the timeline */
+  .rmp-info {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: gray;
+    border-radius: 25px;
+    padding: 10px;
+  }
+  
+  /* Title of the card */
+  .rmp-title {
+    color: $lightPink;
+    position: relative;
+    margin-left: 5%;
+  }
+  
+  /* Timeline dot  */
+  .rmp-title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid $lightPink;
+  }
+  
+  /* text right if the card is even  */
+  .rmp-card:nth-child(even) > .rmp-info > .rmp-title {
+    text-align: right;
+  }
+  
+  /* setting dot to the left if the card is odd */
+  .rmp-card:nth-child(odd) > .rmp-info > .rmp-title::before {
+    left: -51px;
+  }
+  
+  /* setting dot to the right if the card is odd */
+  .rmp-card:nth-child(even) > .rmp-info > .rmp-title::before {
+    right: -30px;
+  }
