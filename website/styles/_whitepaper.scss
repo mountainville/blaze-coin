@@ -1,7 +1,17 @@
 body {
     margin: 0px ;
 }
-
+footer {
+    display: none;
+  }
+  
+#wp-articleHeading {
+    text-shadow: 2px 2px black;
+    background-color:#31203a;
+    max-width: max-content;
+    max-height: max-content;
+    //align-self: center;
+}
 .wp-bookshelfBg {
     height: min-content;
     background-image: url(../images/bookshelfCompressed2.2MB.jpg);
@@ -11,7 +21,6 @@ body {
     h1 {
         font-size: 5em;
         text-decoration: underline overline;
-        
     }
 
     .wp-article {
