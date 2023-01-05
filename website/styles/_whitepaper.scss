@@ -2,65 +2,75 @@ body {
     margin: 0px ;
 }
 
-#wp-articleHeading {
-    text-shadow: 2px 2px black;
-    background-color:#31203a;
-    max-width: max-content;
-    max-height: max-content;
-    //align-self: center;
-}
-
 .wp-bookshelfBg {
     height: min-content;
     background-image: url(../images/bookshelfCompressed2.2MB.jpg);
     background-size: cover;
-}
+    font-family: 'Syne', sans-serif;
 
-.wp-articleContent {
-    border: 3px black solid;
-    padding: 10px;
-    border-radius: 50px;
-    background-color: white;
-    color: #613f75;
-}
-
-.wp-textDiv {
-    display: none;
-}
-
-.wp-article {
-    background-color: #613f75a8;
-    color: #E5C3D1;
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 300px;
-    padding-bottom: 100px;
     h1 {
         font-size: 5em;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: underline overline;
+        
     }
-    h2 {
-        font-size: 2em;
-        text-decoration: underline;
-    }
-    h3 {
-        font-size: 1.5em;
-        text-decoration: underline;
-        cursor: pointer;
-    }
-    h4 {
-        font-size: 1.2em;
-        text-decoration: underline;
-        text-indent: 40px;
-    }
-    .h4p {
-       margin-left:  40px;
-    }
-    p {
-        padding-left: 50px;
-        padding-right: 100px;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 1.2em;
+
+    .wp-article {
+        background-color: #3a2646a8;
+        color: #E5C3D1;
+        padding: 10px;
+        padding-left: 100px;
+        padding-right: 300px;
+        padding-bottom: 100px;
+
+        .wp-articleContent {
+            border: 10px #5C4AE4 outset;
+            border-top: none;
+            border-left: none;
+            padding: 10px;
+            border-radius: 50px;
+            background-color: white;
+            color: #5C4AE4;
+            .wp-title {
+                display: flex;
+                flex-direction: row;
+                img {
+                    margin-left: 30px;
+                    margin-top: 10px;
+                    height: 70px;
+                    width: 80px
+                }
+            }
+            h2 {
+                font-size: 2em;
+                text-decoration: underline;
+            }
+            h3 {
+                font-size: 1.5em;
+                text-decoration: underline;
+                cursor: pointer;
+                button {
+                    margin-right: 25px;
+                }
+            }
+            h4 {
+                font-size: 1.2em;
+                text-decoration: underline;
+                text-indent: 40px;
+            }
+            .wp-h4p {
+            margin-left:  40px;
+            }
+            .wp-textDiv {
+                display: none;
+                p {
+                    padding-left: 50px;
+                    padding-right: 100px;
+                    color: black;
+                    font-family: 'Montserrat', sans-serif;          
+                    font-weight: 600;
+                    font-size: 1.3em;
+                }
+            }
+        }
     }
 }
