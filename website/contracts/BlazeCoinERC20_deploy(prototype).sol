@@ -11,7 +11,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 // Console log functionality
 import "hardhat/console.sol";
 
-contract BlazeCoin is ERC20PresetFixedSupply("Blaze Coin", "BCN", 4200000 * 10**18, msg.sender), Ownable{
+contract Squarium is ERC20PresetFixedSupply("Squarium", "SQR", 4200000 * 10**18, msg.sender), Ownable{
 
     uint256 constant MAX_INTERACTIONS =  1;
     mapping(address => uint256) interactionCount;
@@ -36,7 +36,7 @@ contract BlazeCoin is ERC20PresetFixedSupply("Blaze Coin", "BCN", 4200000 * 10**
         if (totalSupply < 84000000 * 10**18) {
         _mint(msg.sender, 100000 * 10**18);
         } else {
-            console.log("max supply reached"); //works but buggy, function charges Gas, need to check before execute.. or not \_^_^_/
+            console.log("max supply reached"); //error message when max supply reached.
         }
     }
 }
