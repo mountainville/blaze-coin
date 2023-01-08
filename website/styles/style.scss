@@ -12,9 +12,10 @@ $darkBlue: #35375a;
 
 body {
   //background-color: $purple;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  background-color: #bfbff0;
 }
 
 h1,
@@ -27,4 +28,38 @@ h6 {
 }
 html {
   scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+  background-color: #373a73;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-bottom: #ffffff55 5px solid;
+}
+
+a {
+  text-decoration: none;
+  color: #35375a;
+}
+nav > a {
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  background-color: #ffffff7b;
+  transition: ease 0.4s;
+}
+nav > a:hover {
+  background-color: #dc4e76;
+}
+
+nav > img {
+  height: 70%;
+  width: auto;
+  filter: drop-shadow(5px 5px 5px #aa4343);
 }

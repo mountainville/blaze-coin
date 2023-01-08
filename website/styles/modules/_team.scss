@@ -1,7 +1,7 @@
 footer {
   display: none;
 }
-#tp-body{
+#tp-body {
   background-image: url(/website/images/team.avif);
   background-size: cover;
 }
@@ -31,28 +31,52 @@ footer {
 }
 #tp-profilePics {
   display: flex;
+  gap: 2rem 2rem;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   height: 70%;
+  margin-bottom: 3rem;
 }
 .tp-profileBox {
-  background-color: rgba(255, 255, 255, 0.895);
-  height: 90%;
-  width: 18%;
-  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(20px) contrast(70%) brightness(150%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 35%;
+  padding: 2rem;
   border-radius: 5%;
+  align-items: center;
   text-align: center;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 
   .tp-img {
-    display: block;
-    margin: auto;
-    margin-top: 10%;
-    width: 175px;
-    height: 175px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
   }
-  .tp-h3 {
-    margin-top: 17%;
+  p {
+    margin-top: 0;
   }
+}
+
+.tp-hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transition: ease-in 1s;
+}
+.tp-hidden.tp-translateY {
+  transform: translateY(+100%);
+}
+
+.tp-hidden.tp-translateX {
+  transform: translateX(+100%);
+}
+
+.tp-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transform: translateX(0);
 }
