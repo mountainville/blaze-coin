@@ -14,6 +14,7 @@ window.onscroll = function () {
   }
 };
 
+// Function for animation of website. Observes if object is displayed or not
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
