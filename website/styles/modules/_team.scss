@@ -22,17 +22,17 @@ footer {
 #tp-content {
   display: block;
   margin: auto;
-  height: 80%;
+  min-height: 80%;
   width: 80%;
 }
 #tp-profilePics {
   display: flex;
   flex-grow: 1;
   gap: 2rem 2rem;
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
-  height: 70%;
+  min-height: 60rem;
 }
 .tp-profileBox {
   border-radius: 10px;
@@ -65,7 +65,6 @@ footer {
 
 .Zoom.show > div {
   display: none;
-  filter: blur(5);
 }
 
 .Zoom.show.extraInfo > div {
