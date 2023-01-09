@@ -64,3 +64,46 @@ nav > img {
   width: auto;
   filter: drop-shadow(5px 5px 5px #aa4343);
 }
+
+// Object zooms in while mouse is over (:hover)
+.dynamicZoom {
+  transition: ease 0.8s !important;
+}
+
+.dynamicZoom:hover {
+  transform: scale(1.2);
+}
+
+.Zoom {
+  transition: ease 0.5s;
+}
+
+.Zoom:hover {
+  transform: scale(1.05);
+}
+
+// Creates animation when loading page and scroll
+.hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transition: ease-in 1s;
+}
+.hidden.translateY {
+  transform: translateY(+100%);
+}
+
+.hidden.translateX {
+  transform: translateX(+100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transform: translateX(0);
+}
+
+// Blurs background of div
+.blur {
+  backdrop-filter: blur(20px) contrast(70%) brightness(150%);
+}

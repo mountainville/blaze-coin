@@ -14,18 +14,16 @@ window.onscroll = function () {
   }
 };
 
-// Function for animation of website. Observes if object is displayed or not
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("tp-show");
-      entry.target.classList.remove("tp-translateX");
-      entry.target.classList.remove("tp-translateY");
-    } else {
-      entry.target.classList.remove("tp-show");
-    }
-  });
-});
+// tar bort och lägger tll innehåll när man har musen över
 
-const hiddenElements = document.querySelectorAll(".tp-hidden");
-hiddenElements.forEach((el) => observer.observe(el));
+const team = document.querySelectorAll(".tp-profileBox");
+team.forEach((entry) =>
+  entry.addEventListener("mouseenter", () => {
+    entry.classList.add("extraInfo");
+  })
+);
+team.forEach((entry) =>
+  entry.addEventListener("mouseleave", () => {
+    entry.classList.remove("extraInfo");
+  })
+);
