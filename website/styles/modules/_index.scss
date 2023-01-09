@@ -16,6 +16,7 @@ $darkBlue: #35375a;
   justify-content: center;
   align-items: center;
   column-gap: 3rem;
+  position: relative;
 }
 
 .ix-hidden {
@@ -61,19 +62,19 @@ $darkBlue: #35375a;
   width: fit-content;
 }
 
-.arrow-down {
+.ix-arrow-down {
   position: relative;
   top: 0px;
   transition: top 0.5s;
   color: #dc4e76;
 }
-.arrow-down:hover {
+.ix-arrow-down:hover {
   top: 12px;
 }
 
 .custom-shape-divider-bottom-1672855748 {
   position: absolute;
-  bottom: -13rem;
+  bottom: -0.1rem;
   left: 0;
   width: 100%;
   overflow: hidden;
