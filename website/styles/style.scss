@@ -66,9 +66,6 @@ nav > img {
 }
 
 // Object zooms in while mouse is over (:hover)
-.dynamicZoom {
-  transition: ease 0.8s !important;
-}
 
 .dynamicZoom:hover {
   transform: scale(1.2);
@@ -106,4 +103,9 @@ nav > img {
 // Blurs background of div
 .blur {
   backdrop-filter: blur(20px) contrast(70%) brightness(150%);
+}
+
+// Creates slow transition and then removes
+.slowTransition {
+  transition: 2s ease-out !important;
 }

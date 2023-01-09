@@ -96,6 +96,9 @@ $darkBlue: #35375a;
   border-radius: 1rem;
   padding: 3rem;
   height: fit-content;
+  min-width: 18rem;
+  overflow: hidden;
+  transition: ease 0.2s !important;
 }
 
 .ix-coin-img {

@@ -5,6 +5,9 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.add("show");
       entry.target.classList.remove("translateX");
       entry.target.classList.remove("translateY");
+      setTimeout(() => {
+        entry.target.classList.remove("slowTransition");
+      }, 3000);
     } else {
       entry.target.classList.remove("show");
     }
