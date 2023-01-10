@@ -9,3 +9,7 @@
 --- skapade Twitter konto
 --- skapade Discord server
 --- Lade till fler devs i Smart Kontraktet
+--- Bestämde oss för domännamn och att hosta sidan någonstans
+
+--- lade till ett par uppgifter i kanban
++ 14SP
