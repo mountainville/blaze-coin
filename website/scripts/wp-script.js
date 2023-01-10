@@ -5,16 +5,21 @@ console.log(textDivs);
 console.log(hThrees);
 
 for (let i = 0; i < textDivs.length; i++) {
-  textDivs[i].setAttribute("id", `textDiv${i}`);
+    textDivs[i].setAttribute('id', `textDiv${i}`);
+    
+    hThrees[i].addEventListener('click', () => {
+        const textDiv = document.getElementById(`textDiv${i}`);
+        if (textDiv.style.display === "block") {
+            textDiv.style.display = "none";
+            const btnChild = hThrees[i].firstChild;
+            btnChild.innerHTML = "+"
 
-  hThrees[i].addEventListener("click", () => {
-    const textDiv = document.getElementById(`textDiv${i}`);
-    if (textDiv.style.display === "block") {
-      textDiv.style.display = "none";
-    } else {
-      textDiv.style.display = "block";
-    }
-  });
+        } else {
+            textDiv.style.display = "block";
+            const btnChild = hThrees[i].firstChild;
+            btnChild.innerHTML = "-"
+        }
+    });
 }
 
 // Function that enables for clicking the nav buttons
