@@ -35,28 +35,32 @@ nav {
   display: flex;
   flex-direction: row;
   height: 5rem;
-  background-color: #373a73;
+  background-color: #938e9f;
+  background-image: linear-gradient(rgb(92, 74, 228), rgba(32, 18, 79, 0.67));
   justify-content: space-around;
   align-items: center;
   font-weight: 700;
   font-size: 1.1rem;
-  border-bottom: #ffffff55 5px solid;
+  border-bottom: #ffffff78 3px solid;
 }
 
 a {
   text-decoration: none;
-  color: #35375a;
+  color: #ffdbf4;
 }
 nav > a {
   padding: 8px;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 5px;
-  background-color: #ffffff7b;
+  border-bottom: #c2c2c23b solid 4px;
+  border-right: #c2c2c27b solid 3px;
+  background: linear-gradient(rgba(0, 0, 0, 0.139), rgba(255, 255, 255, 0.356));
   transition: ease 0.4s;
 }
 nav > a:hover {
   background-color: #dc4e76;
+  opacity: 1;
 }
 
 nav > img {
@@ -65,6 +69,42 @@ nav > img {
   filter: drop-shadow(5px 5px 5px #aa4343);
 }
 
+.header-coin {
+  filter: drop-shadow(-5px 0px 5px #bfbfbfc3);
+}
+.header-link {
+  height: 1.5rem;
+}
+.header-metaMask {
+  padding-left: 0.3rem;
+}
+
+#connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(
+    rgba(253, 148, 0, 0.376),
+    rgba(255, 255, 255, 0.345)
+  );
+  border: none;
+  border-radius: 1rem;
+  padding-right: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  transition: ease 1.2s;
+  //   border: dotted 3px rgba(255, 255, 255, 0.143);
+}
+
+#connect:hover {
+  background: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+nav > button > img {
+  height: 2.5rem;
+}
 // Object zooms in while mouse is over (:hover)
 
 .dynamicZoom:hover {
@@ -105,7 +145,7 @@ nav > img {
   backdrop-filter: blur(20px) contrast(70%) brightness(150%);
 }
 
-// Creates slow transition and then removes
+// Creates slow transition and on load and then removes itself after intiation
 .slowTransition {
   transition: 2s ease-out !important;
 }
