@@ -21,10 +21,6 @@ footer {
   font-family: "Syne", sans-serif;
   min-height: 100vh;
 
-  h1 {
-    // font-size: 5em;
-    // text-decoration: underline overline;
-  }
 
   .wp-article {
     background-color: #200ba782;
@@ -38,13 +34,15 @@ footer {
 
     .wp-articleContent {
       border: 10px #5c4ae4 outset;
+      border-bottom: 10px  #2d2474 outset;
       border-top: none;
       border-left: none;
       padding: 10px;
       border-radius: 50px;
-      background-color: #dc4e76;
-      color: #35375a;
+      background-color: #a13956;
+      color: #c8c9e0;
       padding: 3rem;
+      }
       .wp-title {
         display: flex;
         flex-direction: row;
@@ -64,7 +62,23 @@ footer {
         text-decoration: underline;
         cursor: pointer;
         button {
-          margin-right: 25px;
+          margin-right: 40px;
+          height: 40px;
+          width: 40px;
+          font-size: 30px;
+          background-color: black;
+          color: white;
+          border-radius: 10px;
+          border: 0px;
+          cursor: pointer;
+          border-bottom: #837078 3px outset;
+          border-right: #e5c3d1 3px outset;
+        }
+        &:hover .button{
+          border-bottom: 0px;
+          border-right: 0px;
+          border-left: #e5c3d1 3px inset;
+          border-top: #837078 3px inset;
         }
       }
       h4 {
@@ -80,7 +94,7 @@ footer {
         p {
           padding-left: 50px;
           padding-right: 100px;
-          color: black;
+          color: rgb(213, 213, 213);
           font-family: "Montserrat", sans-serif;
           font-weight: 600;
           font-size: 1.3em;
@@ -88,8 +102,18 @@ footer {
       }
     }
   }
-}
+
 .wp-logo {
   height: auto;
   width: 30rem;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+#wp-SQR-logo {
+  background-color:#d5d5e1;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+
 }

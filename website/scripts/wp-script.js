@@ -11,8 +11,13 @@ for (let i = 0; i < textDivs.length; i++) {
         const textDiv = document.getElementById(`textDiv${i}`);
         if (textDiv.style.display === "block") {
             textDiv.style.display = "none";
+            const btnChild = hThrees[i].firstChild;
+            btnChild.innerHTML = "+"
+
         } else {
             textDiv.style.display = "block";
+            const btnChild = hThrees[i].firstChild;
+            btnChild.innerHTML = "-"
         }
     });
 }
