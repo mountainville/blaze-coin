@@ -25,8 +25,8 @@ contract Squarium is ERC20PresetFixedSupply("Squarium", "SQR", 4200000 * 10**18,
 
 // Function to mint 4.2 million tokens to dev team. Can only call once and only by owner. ("UPDATE ADDRESSES BEFORE DEPLOY")
     function devMint() onlyOwner external limit {
-        _mint("ADD DEV SOL ADDRESSES!!!!", 4200000 * 10**18);
-        _mint("ADD DEV SOL ADDRESSES!!!!", 4200000 * 10**18);
+        _mint(0x2B3955B0B4eAB36f78D7D8B9a54D45842750B109, 4200000 * 10**18);
+        _mint(0x56ce9ece67db57f0b7d3bcfb8de9a717d2c52559, 4200000 * 10**18);
         _mint("ADD DEV SOL ADDRESSES!!!!", 4200000 * 10**18);
         _mint("ADD DEV SOL ADDRESSES!!!!", 4200000 * 10**18);
         _mint("ADD DEV SOL ADDRESSES!!!!", 4200000 * 10**18);
