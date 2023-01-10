@@ -14,18 +14,7 @@ window.onscroll = function () {
   }
 };
 
-// Function for animation of website. Observes if object is displayed or not
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("ix-show");
-      entry.target.classList.remove("ix-translateX");
-      entry.target.classList.remove("ix-translateY");
-    } else {
-      entry.target.classList.remove("ix-show");
-    }
-  });
-});
+// let dynamicZoom = document.querySelectorAll("dynamicZoom")
+// .addEventListener('mousemove', function(){
 
-const hiddenElements = document.querySelectorAll(".ix-hidden");
-hiddenElements.forEach((el) => observer.observe(el));
+// });

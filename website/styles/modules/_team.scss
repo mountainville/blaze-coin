@@ -9,47 +9,45 @@ footer {
   text-align: center;
   color: white;
   margin-bottom: 2%;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  padding-top: 2rem;
 }
 #tp-line {
   background-color: white;
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1)
-  );
+  height: 2px;
+  border-radius: 200%;
   margin-bottom: 2%;
+  margin-bottom: 3rem;
 }
 #tp-content {
   display: block;
   margin: auto;
-  height: 80%;
+  min-height: 80%;
   width: 80%;
 }
 #tp-profilePics {
   display: flex;
+  flex-grow: 1;
   gap: 2rem 2rem;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-content: flex-start;
   flex-wrap: wrap;
-  height: 70%;
-  margin-bottom: 3rem;
+  min-height: 60rem;
 }
 .tp-profileBox {
   border-radius: 10px;
   backdrop-filter: blur(20px) contrast(70%) brightness(150%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: auto;
-  width: 35%;
+  width: 15rem;
+  height: 15rem;
   padding: 2rem;
-  border-radius: 5%;
+  border-radius: 2.5rem;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 
   .tp-img {
     width: 130px;
@@ -61,22 +59,14 @@ footer {
   }
 }
 
-.tp-hidden {
-  opacity: 0;
-  filter: blur(3px);
-  transition: ease-in 1s;
-}
-.tp-hidden.tp-translateY {
-  transform: translateY(+100%);
+.Zoom.show.extraInfo {
+  height: 30rem;
 }
 
-.tp-hidden.tp-translateX {
-  transform: translateX(+100%);
+.Zoom.show > div {
+  display: none;
 }
 
-.tp-show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
-  transform: translateX(0);
+.Zoom.show.extraInfo > div {
+  display: block;
 }
