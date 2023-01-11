@@ -8,8 +8,11 @@
     <title>Squarium</title>
     <script src="./scripts/index-script.js" type="module" defer></script>
     <script src="./scripts/script.js" type="module" defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Syne:wght@400;500;600;700;800&display=swap"
@@ -24,10 +27,18 @@
         <a href="./html/roadmap.html" target="_self">Roadmap</a>
         <a href=".//html/whitepaper.html" target="_self">Whitepaper</a>
         <a href="./html/team.html" target="_self">Meet the team</a>
-        <img src="./images/SQRLogo.png" alt="" />
+        <button id="connect">
+          <img src="./images/SQRLogo.png" alt="" class="header-coin" />
+          <img src="./images/link.png" alt="" class="header-link" />
+          <img
+            src="./images/metamask-icon.png"
+            alt=""
+            class="header-metaMask"
+          />
+        </button>
       </nav>
     </header>
-    <section class="ix-full-height ix-start-page">
+    <section class="ix-start-page">
       <div class="ix-box blur">
         <img
           src="./images/sqfn.png"
@@ -49,10 +60,10 @@
         /></a>
       </div>
       <div class="custom-shape-divider-bottom-1672855748">
-        <img src="./images/waves.svg" alt="" />
+        <img src="./images/waves.svg" alt="" class="gradient" />
       </div>
     </section>
-    <section class="ix-full-height ix-text-page" id="section2">
+    <section class="ix-section ix-text-page" id="section2">
       <!--Section introducing the coin-->
       <div class="ix-about Zoom">
         <h2 class="hidden ix-about-h2">SQUARIUM</h2>
@@ -63,7 +74,7 @@
           the hassles associated with traditional financial institutions.
         </p>
         <p class="hidden translateY">
-          But that's not Squarium also offers innovative features such as
+          But that's not all, Squarium also offers innovative features such as
           Peer-to-Peer lending. These capabilities make it stand out from the
           competition and offer even more value to users.
         </p>
@@ -84,29 +95,97 @@
       </div>
     </section>
     <div><!--Section containing an infographic--></div>
-    <section class="ix-full-height">
+    <section class="ix-section ix-text-page">
       <!--Section explaining crypto technology-->
-      <h3 class="hidden">Lorem Ipsum</h3>
-      <p class="hidden">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet
-        dignissimos, quaerat cumque porro quis facilis molestias atque
-        consectetur possimus cum modi explicabo similique! Velit corporis ut
-        repellendus impedit voluptatibus?
-      </p>
-      <p class="hidden translateY">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet
-        dignissimos, quaerat cumque porro quis facilis molestias atque
-        consectetur possimus cum modi explicabo similique! Velit corporis ut
-        repellendus impedit voluptatibus?
-      </p>
-      <p class="hidden translateY">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet
-        dignissimos, quaerat cumque porro quis facilis molestias atque
-        consectetur possimus cum modi explicabo similique! Velit corporis ut
-        repellendus impedit voluptatibus?
-      </p>
+      <div class="ix-coin ix-2">
+        <img
+          src="./images/coin.png"
+          alt="coin"
+          height="300"
+          class="hidden ix-coin-img translateX dynamicZoom slowTransition"
+        />
+      </div>
+      <div class="ix-about Zoom ix-2">
+        <h2 class="hidden ix-about-h2">Peer-to-Peer</h2>
+        <p class="hidden">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet
+          dignissimos, quaerat cumque porro quis facilis molestias atque
+          consectetur possimus cum modi explicabo similique! Velit corporis ut
+          repellendus impedit voluptatibus?
+        </p>
+        <p class="hidden translateY">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet
+          dignissimos, quaerat cumque porro quis facilis molestias atque
+          consectetur possimus cum modi explicabo similique! Velit corporis ut
+          repellendus impedit voluptatibus?
+        </p>
+        <p class="hidden translateY">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet
+          dignissimos, quaerat cumque porro quis facilis molestias atque
+          consectetur possimus cum modi explicabo similique! Velit corporis ut
+          repellendus impedit voluptatibus?
+        </p>
+      </div>
+    </section>
+    <section class="ix-section ix-text-page">
+      <!--Section introducing the coin-->
+      <div class="ix-about Zoom ix-3">
+        <h2 class="hidden ix-about-h2">The Blockchain</h2>
+        <p class="hidden translateY">
+          Our team has been hard at work developing a digital asset that is not
+          only secure and decentralized, but also easy to use and understand.
+          With Squarium, you can make fast, low-cost transactions without any of
+          the hassles associated with traditional financial institutions.
+        </p>
+        <p class="hidden translateY">
+          But that's not all, Squarium also offers innovative features such as
+          Peer-to-Peer lending. These capabilities make it stand out from the
+          competition and offer even more value to users.
+        </p>
+        <p class="hidden translateY">
+          We're confident Squarium will become a major player in the
+          cryptocurrency world, and we can't wait for you to be a part of it. So
+          why wait? Start using Squarium today and join the revolution of
+          decentralized finance.
+        </p>
+      </div>
+      <div class="ix-coin ix-3">
+        <img
+          src="./images/coin.png"
+          alt="coin"
+          height="300"
+          class="hidden ix-coin-img translateX dynamicZoom slowTransition"
+        />
+      </div>
     </section>
     <div><!--Section containing an infographic--></div>
-    <footer></footer>
+    <footer>
+      <div class="row">
+        <div class="col">
+        <img src="./images/SQRlogo.png" class="footerLogo">
+      </div>
+      <div class="col">
+        <p class="informed">Stay informed and be on top of the latest developments by following us on our social media channels. </p>
+      </div>
+      <div class="col">
+        <p><i class="fas fa-envelope">&nbsp;&nbsp;&nbsp;Email address:</i>squaredfinance@proton.me</p>
+      </div>
+      <div class="col">
+        <div class="socialIcons">
+          <p class="commu">Join our community:</p>
+          <a href="http://twitter.com/squaredfinance_"><i class="fab fa-twitter"></i></a>
+          <a href="http://discord.gg/jVVAs9CM"><i class="fab fa-discord"></i></a>
+  
+    </div>
+      </div>
+    
+
+    <div class="col">
+      <div class="copyright"> <br>
+        <p class="terms">Terms & Conditions</p>
+        <p>Copyright &#169; <br> Squared Finance 2023</p>
+      </div>
+    </div>
+    </footer>
   </body>
 </html>
