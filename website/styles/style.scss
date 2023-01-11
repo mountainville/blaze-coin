@@ -11,8 +11,6 @@ $darkBlue: #35375a;
 @import "./modules/roadmap";
 @import "./modules/footer";
 
-
-
 body {
   //background-color: $purple;
   min-height: 100vh;
@@ -40,12 +38,12 @@ nav {
   flex-direction: row;
   height: 5rem;
   background-color: #938e9f;
-  background-image: linear-gradient(rgb(92, 74, 228), rgba(32, 18, 79, 0.67));
+  background-image: linear-gradient(#160000bf, #000945);
   justify-content: space-around;
   align-items: center;
   font-weight: 700;
   font-size: 1.1rem;
-  border-bottom: #ffffff78 3px solid;
+  border-bottom: #ffffff84 3px solid;
 }
 
 a {
