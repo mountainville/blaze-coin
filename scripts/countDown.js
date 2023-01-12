@@ -3,7 +3,7 @@ export default function timer(){
 let timer = document.getElementById("timer");
 
 // date we're counting down to
-var countDownDate = new Date("Jan 13, 2023 17:00:00").getTime();
+var countDownDate = new Date("Jan 13, 2023 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
