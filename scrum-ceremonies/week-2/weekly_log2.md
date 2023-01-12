@@ -13,3 +13,17 @@
 
 --- lade till ett par uppgifter i kanban
 + 14SP
+
+### Stand up onsdag         
+        Vi Har!
+--- Lade till Connect to Metamask knapp
+--- publicerat sidan med domännamn squarefinance.xyc
+--- Designat footer 
+--- Förenklat CSS flow 
+--- Förbättrat Roadmap men fortf work in progress
+
+        Vi ska
+--- Förbereda stream för launch kl 12 Fredag
+--- Testa kontraktet en sista gång
+--- Lägga till de sista Devs i kontraktet
+--- Dev Images I Teams

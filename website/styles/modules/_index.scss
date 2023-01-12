@@ -8,22 +8,28 @@ $darkBlue: #35375a;
   background-color: #bfbff0;
 }
 
-.ix-full-height {
-  padding: 3rem;
-  min-height: 80vh;
+.ix-section {
   display: flex;
+  padding: 3rem;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+// Start Page
+.ix-start-page {
+  background-image: url("../images/start-page.png");
+  background-size: cover;
+  min-height: 90vh;
+  display: flex;
+  padding: 3rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   column-gap: 3rem;
   position: relative;
-}
-
-// Start Page
-.ix-full-height.ix-start-page {
-  background-image: url("../images/start-page.png");
-  background-size: cover;
-  min-height: 90vh;
 }
 
 .ix-box {
@@ -76,15 +82,19 @@ $darkBlue: #35375a;
 }
 
 // about page
-.ix-full-height.ix-text-page {
-  flex-direction: row;
-  min-height: 80vh;
-}
 .ix-about {
   background-color: #dc4e76;
   border-radius: 1rem;
   padding: 3rem;
   height: fit-content;
+}
+
+.ix-about.ix-2 {
+  background-color: #a946be;
+}
+
+.ix-about.ix-3 {
+  background-color: #cc4b93;
 }
 
 .ix-about-h2 {
@@ -99,6 +109,10 @@ $darkBlue: #35375a;
   min-width: 18rem;
   overflow: hidden;
   transition: ease 0.2s !important;
+}
+
+.ix-coin.ix-2 {
+  background-color: #35375a;
 }
 
 .ix-coin-img {
