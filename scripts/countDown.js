@@ -27,7 +27,9 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    timer.innerHTML = `<button id="airdropBtn">Mint</button>`;
+    let airDropTxt = document.getElementById("airDropTxt");
+    airDropTxt.innerHTML="CLAIM YOUR AIRDROP NOW!"
+    timer.innerHTML = `<button id="airdropBtn">CLAIM</button>`;
     let airdropBtn = document.getElementById("airdropBtn");
     airdropBtn.addEventListener("click", () => {
         //mint();
