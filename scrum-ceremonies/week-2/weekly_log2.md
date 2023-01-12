@@ -27,3 +27,16 @@
 --- Testa kontraktet en sista gång
 --- Lägga till de sista Devs i kontraktet
 --- Dev Images I Teams
+
+
+### Stand up torsdag
+--- Designat header
+--- Jobbat hårt med mintBTn
+--- Researchat Lending service
+--- finslipat footer
+--- styleat färdigt roadmap
+
+--- Ska flytta filer till root 
+--- Ska börja jobba med lending service
+--- designa countdown
+--- add TODO lägg till metamask knapp på alla sidor
