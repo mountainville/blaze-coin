@@ -3,7 +3,7 @@ export default function timer(){
 let timer = document.getElementById("timer");
 
 // date we're counting down to
-var countDownDate = new Date("Jan 13, 2023 17:00:00").getTime();
+var countDownDate = new Date("Jan 13, 2023 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -27,7 +27,9 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    timer.innerHTML = `<button id="airdropBtn">Mint</button>`;
+    let airDropTxt = document.getElementById("airDropTxt");
+    airDropTxt.innerHTML="CLAIM YOUR AIRDROP NOW!"
+    timer.innerHTML = `<button id="airdropBtn">CLAIM</button>`;
     let airdropBtn = document.getElementById("airdropBtn");
     airdropBtn.addEventListener("click", () => {
         //mint();
