@@ -25,8 +25,8 @@ timer();
 let web3;
 
 async function Connect() {
-  await window.web3.currentProvider.enable();
-  web3 = new Web3(window.web3.currentProvider);
+  window.web3 = new Web3(window.ethereum);
+  window.ethereum.enable();
 }
 
 const connectBtn = document.getElementById("connect");
