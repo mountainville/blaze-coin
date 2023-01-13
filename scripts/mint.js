@@ -9,7 +9,7 @@ export default async function mint(){
             }
         }
       
-        sync function loadContract() {
+        async function loadContract() {
             let abi = [
                     {
                         "anonymous": false,
