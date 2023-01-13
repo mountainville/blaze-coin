@@ -29,7 +29,7 @@ var x = setInterval(function() {
     clearInterval(x);
     let airDropTxt = document.getElementById("airDropTxt");
     airDropTxt.innerHTML="CLAIM YOUR AIRDROP NOW!"
-    timer.innerHTML = `<button id="airdropBtn">CLAIM</button>`;
+    timer.innerHTML = `<button id="airdropBtn">CLAIM (On testnet until 12:00 CET)</button>`;
     let airdropBtn = document.getElementById("airdropBtn");
     airdropBtn.addEventListener("click", () => {
         mint();
