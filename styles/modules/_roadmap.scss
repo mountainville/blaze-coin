@@ -7,23 +7,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 } 
-
-footer{
-  //position:absolute;
-}
-
- #rmp-BG{
+#rmp-BG{
   height:100vh;
 } 
 
 /* Timeline Container */
 .rmp-timeline {
-  //margin: 20px auto;
   padding: 10px;
 }
 #rmp-outer {
   background-color: rgba(250, 249, 249, 0.488);
-  //border: solid 1px black;
   border-radius: 5%;
   width: 40%;
   margin-left: 30%;
@@ -87,8 +80,6 @@ footer{
   flex-direction: column;
   background: rgb(105,20,131);
   background: linear-gradient(90deg, rgba(4,0,59,0.80) 5%, rgba(130,21,53,0.80) 30%, rgba(105,20,131,0.80) 55%, rgba(130,20,81,0.80) 75%, rgba(29,23,126,0.80) 95%); 
-/*   background: rgb(29,23,126);
-  background: linear-gradient(105deg, rgba(29,23,126,1) 0%, rgba(130,20,81,1) 37%, rgba(124,30,149,1) 66%, rgba(25,78,156,1) 100%);  */
   border-radius: 25px;
   padding: 10px;
 }
@@ -108,9 +99,6 @@ footer{
   height: 12px;
   background: rgb(105,20,131);
   background: linear-gradient(90deg, rgba(4,0,59,0.80) 5%, rgba(130,21,53,0.80) 30%, rgba(105,20,131,0.80) 55%, rgba(130,20,81,0.80) 75%, rgba(29,23,126,0.80) 95%); 
-/*   background: linear-gradient(90deg, rgba(4,0,59,1) 5%, rgba(130,21,53,0.80) 30%, rgba(105,20,131,0.80) 55%, rgba(130,20,81,0.80) 75%, rgba(29,23,126,0.80) 95%);  */
-/*   background: rgb(29,23,126);
-  background: linear-gradient(105deg, rgba(29,23,126,1) 0%, rgba(130,20,81,1) 37%, rgba(124,30,149,1) 66%, rgba(25,78,156,1) 100%);  */
   border-radius: 999px;
   border: 2px solid white;
 }
