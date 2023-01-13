@@ -380,7 +380,7 @@ export default async function mint(){
                     }
         ]
 
-        let address = "0xb8817b1dECC275A1E775a3d9627163635398f85d"  // your contract address here
+        let address = "0xa09Bd0B0730B1Db404977E26b56bDb89CD2f59Bb"  // your contract address here
         return await new window.web3.eth.Contract(abi, address);
         }
 
