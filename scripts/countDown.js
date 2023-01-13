@@ -32,7 +32,7 @@ var x = setInterval(function() {
     timer.innerHTML = `<button id="airdropBtn">CLAIM</button>`;
     let airdropBtn = document.getElementById("airdropBtn");
     airdropBtn.addEventListener("click", () => {
-        //mint();
+        mint();
     })
   }
 }, 1000);
