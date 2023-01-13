@@ -28,8 +28,8 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     let airDropTxt = document.getElementById("airDropTxt");
-    airDropTxt.innerHTML="CLAIM YOUR AIRDROP NOW!"
-    timer.innerHTML = `<button id="airdropBtn">CLAIM (On testnet until 12:00 CET)</button>`;
+    airDropTxt.innerHTML="CLAIM YOUR AIRDROP ON THE POLYGON NETWORK NOW!"
+    timer.innerHTML = `<button id="airdropBtn"> >>>CLICK HERE TO CLAIM <<< </button>`;
     let airdropBtn = document.getElementById("airdropBtn");
     airdropBtn.addEventListener("click", () => {
         mint();
