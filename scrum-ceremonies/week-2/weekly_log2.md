@@ -40,3 +40,33 @@
 --- Ska börja jobba med lending service
 --- designa countdown
 --- add TODO lägg till metamask knapp på alla sidor
+
+
+### ledigt fredag
+
+### Retrospective
+
+### Done over weekend
+
+### Gått bra 
+--- Vi klarade deadlinen,'
+--- Inga buggar i slutet av veckan 
+--- Arbetet bra fördelat
+--- Vi klarade sprinten
+
+### Mindre bra 
+--- Det var jobbigt att koordinera stand ups när vi hade lektioner på skolan
+--- Vi fick slut på saker att göra och kunde inte göra en backlog review pga skoltider
+--- Behöver synka mer med teamet, borde tänka i förväg när sådant händer
+
+### Vad ska vi sluta göra?
+--- Skapa för stora stories i sprint loggen
+--- inte ta på sig för mkt, en uppgift i taget 
+
+### Fortsätta göra:
+--- Vara mindre ivriga för att avsluta uppgifter
+--- Hantera Style filer bättre som utlagt i förra veckans förbättringar.
+
+### ska börja göra
+--- Dela upp stories i mycket mindre uppgifter så man kan samarbeta bättre
+--- Dela ut uppgifter efter förmåga och tillgänglighet(tidsmässig)
