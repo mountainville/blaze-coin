@@ -1,3 +1,6 @@
+import borrow from "./lendingModules/borrow.js";
+let borrowContainer = document.getElementById("borrow-container");
+
 // Definition of buttons
 const borrowButton = document.getElementById('lending-borrow-button');
 const lendButton = document.getElementById('lending-lend-button');
@@ -18,9 +21,10 @@ const username = document.getElementById('username');
 
 // Function: change interface to "Borrow" page
 borrowButton.addEventListener('click', () => {
-    borrowPage.style.display = 'block';
-    lendPage.style.display = 'none';
-    repayPage.style.display = 'none';
+    borrowContainer.innerHTML= borrow();
+    // borrowPage.style.display = 'block';
+    // lendPage.style.display = 'none';
+    // repayPage.style.display = 'none';
 });
 
 // FUnction: change interface to "Lend" page
