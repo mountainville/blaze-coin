@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/style.css" />
+        <script src="/scripts/lending-script.js" defer type="module"></script>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <title>Lending</title>
+    </head>
+    <body class="lending-body">
+        <header>
+            <nav>
+                <img src="images/sqfn.png" alt="logo" height="10px" />
+                <a href="/index.html" target="_self">About</a>
+                <a href="/html/roadmap.html" target="_self">Roadmap</a>
+                <a href="//html/whitepaper.html" target="_self">Whitepaper</a>
+                <a href="/html/team.html" target="_self">Meet the team</a>
+                <button id="connect">
+                  <img src="/images/SQRLogo.png" alt="" class="header-coin" />
+                  <img src="/images/link.png" alt="" class="header-link" />
+                  <img
+                    src="/images/metamask-icon.png"
+                    alt=""
+                    class="header-metaMask"
+                  />
+                </button>
+              </nav>  
+        </header>
+        <div class="lending-title"><h1>Decentralized Lending, Transformed at Scale</h1></div>
+        <div class="lending-nav-buttons">
+            <button id="lending-borrow-button" type="submit">Borrow</button>
+            <button id="lending-lend-button" type="submit">Lend</button>
+            <button id="lending-repay-button" type="submit">Repay</button>
+        </div>
+
+        <div id="borrow-container" class="lending-container-borrow">
+            <div class="lending-container-borrow-title">
+                <h2>Borrow SQR</h2>
+            </div>
+            <div class="lending-container-borrow-amount">
+                <h3>Amount</h3>
+                <input type="text" placeholder="e.g 1 000 000 SQR" />
+            </div>
+            <div class="lending-container-borrow-collateral">
+                <h3>Collateral</h3>
+                <input type="text" placeholder="e.g 1 000 000 SQR" />
+            <div class="lending-container-borrow-credentials">
+                <h3>Enter Your Credentials...</h3>
+                <label for="name">Username</label>
+                <input id="username" type="text" placeholder="JACOB"/>
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="********"/>
+                <h3>...or Verify Wallet Connection</h3>
+                <button>Authorize Wallet</button>
+                <h3>Execute Transaction</h3>
+                <button id="lending-execute-button">Execute</button>
+            </div>
+
+        <!---   <div id="lend-container" class="lending-container-lend"></div>
+                <div class="lending-container-lend-title">
+                    <h2>Lend SQR</h2>
+
+
+            <div id="repay-container" class="lending-container-repay"></div>      
+            -> 
+        
+            
+            
+  
+    </body>
+</html>
