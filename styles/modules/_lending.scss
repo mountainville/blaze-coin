@@ -11,6 +11,27 @@
 
 };
 
+.liquidityTerm {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    button {
+        padding: 10px;
+        transform: translateX(-30px);
+        margin: 10px;
+        background-color: #334a4e;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 1.3rem;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        &:hover {
+            background-color: #618c94;
+        }
+    }
+}
 
 // Lending title
 .lending-title h1 {
