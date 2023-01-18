@@ -29,7 +29,7 @@ export default function lend(){
                     <div class="lending-container-borrow-credentials">
                         <h3>Verify Wallet Connection</h3>
                         <h4>Make sure to select Polygon Mainnet</h4>
-                        <button>Authorize Wallet</button>
+                        <button id="verifyWalletButton2">Authorize Wallet</button>
                         <h3>Deposit SQR</h3>
                         <button id="lending-execute-button">Deposit</button>
                     </div>

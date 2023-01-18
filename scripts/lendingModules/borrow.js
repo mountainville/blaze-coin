@@ -19,7 +19,7 @@ let borrow = `
                     <label for="password">Password</label>
                     <input id="password" type="password" placeholder="********"/>
                     <h3>...or Verify Wallet Connection</h3>
-                    <button>Authorize Wallet</button>
+                    <button id="verifyWalletButton1">Authorize Wallet</button>
                     <h3>Execute Transaction</h3>
                     <button id="lending-execute-button">Execute</button>
                 </div>

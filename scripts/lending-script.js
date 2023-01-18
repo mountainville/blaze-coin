@@ -13,6 +13,14 @@ const executeBorrowButton = document.getElementById('execute-borrow-button');
 const executeLendButton = document.getElementById('execute-lend-button');
 const executeRepayButton = document.getElementById('execute-repay-button');
 
+const lendingExecuteButton = document.getElementById('lending-execute-button');
+
+// Definition of verify wallet button
+const verifyWalletButton1 = document.getElementById('verifyWalletButton1');
+const verifyWalletButton2 = document.getElementById('verifyWalletButton2');
+
+
+
 // loan terms for Lend Page
 let liquidityTerm = document.getElementById("liquidityTerm");
 let lend1M = document.getElementById("lend1M");
@@ -59,7 +67,7 @@ repayButton.addEventListener('click', () => {
     //repayPage.style.display = 'block';
 });
 
-// Function that verifies credentials
+// Function that verifies credentials (in progress)
 const users = [
     {id: 1, username: 'user1', password: 'password1'},
     {id: 2, username: 'user2', password: 'password2'},
@@ -80,24 +88,32 @@ function verifyCredentials() {
 };
 
 // Function that verifies wallet connection (in progress)
-    const wallet = async () => {
+    
+    function verifyWalletConnection () {
         if (typeof window.ethereum !== 'undefined') {
             alert('Wallet verified!');
             return true;
         } 
         alert('Wallet not verified!');
         return false;
-    };    
+    };
+    
+    verifyWalletButton1.addEventListener('click', () => {
+        verifyWalletConnection();
+    });
 
-// Function that executes Borrow when conditions are met
-/* executeBorrowButton.addEventListener('click', () => {
-    if (verifyCredentials() || verifyWalletConnection()) {
-        alert('Transaction executed!');
-        return true;
-    }   
-    alert('Transaction not executed!');
-    return false;
-}); */
+    verifyWalletButton2.addEventListener('click', () => {
+        verifyWalletConnection();
+    });
+
+// Function that executes lending when conditions  met (in progress) 
+    lendingExecuteButton.addEventListener('click', () => {
+        if (verifyCredentials() || verifyWalletConnection()) {
+            alert('Transaction executed!');
+        }
+        else {alert('Transaction failed');
+        }});
+
 
 function addLendTermListeners () {
     //console.log("starting function");
@@ -121,7 +137,7 @@ function addLendTermListeners () {
             return;
         })
     }
-}
+};
 
 
 
