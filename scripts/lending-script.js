@@ -1,5 +1,6 @@
 import borrow from "./lendingModules/borrow.js";
 import lend from "./lendingModules/lend.js";
+import repay from "./lendingModules/repay.js";
 
 let borrowContainer = document.getElementById("borrow-container");
 
@@ -36,7 +37,7 @@ lendButton.addEventListener('click', () => {
 
 // Function: change interface to "Repay" page
 repayButton.addEventListener('click', () => {
-    borrowContainer.innerHTML = "<p>Work in progress</p>"
+    borrowContainer.innerHTML = repay();
     //borrowPage.style.display = 'none';
     //lendPage.style.display = 'none';
     //repayPage.style.display = 'block';
