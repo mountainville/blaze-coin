@@ -79,13 +79,15 @@ function verifyCredentials() {
     return false;
 };
 
-// Function that verifies wallet connection
+// Function that verifies wallet connection (in progress)
     const wallet = async () => {
         if (typeof window.ethereum !== 'undefined') {
             alert('Wallet verified!');
             return true;
         } 
-    }    
+        alert('Wallet not verified!');
+        return false;
+    };    
 
 // Function that executes Borrow when conditions are met
 /* executeBorrowButton.addEventListener('click', () => {
