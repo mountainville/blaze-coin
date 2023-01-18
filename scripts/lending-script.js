@@ -1,4 +1,6 @@
 import borrow from "./lendingModules/borrow.js";
+import lend from "./lendingModules/lend.js";
+
 let borrowContainer = document.getElementById("borrow-container");
 
 // Definition of buttons
@@ -29,16 +31,15 @@ borrowButton.addEventListener('click', () => {
 
 // FUnction: change interface to "Lend" page
 lendButton.addEventListener('click', () => {
-    borrowPage.style.display = 'none';
-    lendPage.style.display = 'block';
-    repayPage.style.display = 'none';
+    borrowContainer.innerHTML= lend();
 });
 
 // Function: change interface to "Repay" page
 repayButton.addEventListener('click', () => {
-    borrowPage.style.display = 'none';
-    lendPage.style.display = 'none';
-    repayPage.style.display = 'block';
+    borrowContainer.innerHTML = "<p>Work in progress</p>"
+    //borrowPage.style.display = 'none';
+    //lendPage.style.display = 'none';
+    //repayPage.style.display = 'block';
 });
 
 // Function that verifies credentials
