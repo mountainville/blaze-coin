@@ -108,7 +108,7 @@ function verifyCredentials() {
 
 // Function that executes lending when conditions  met (in progress) 
     lendingExecuteButton.addEventListener('click', () => {
-        if (verifyCredentials() || verifyWalletConnection()) {
+        if (verifyCredentials() === true || verifyWalletConnection() === true) {
             alert('Transaction executed!');
         }
         else {alert('Transaction failed');
