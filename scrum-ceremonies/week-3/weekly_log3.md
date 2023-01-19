@@ -14,3 +14,10 @@
 --- tänk på lösningar till lending sidan
 --- pluggat Solidity 
 --- Fixar texten på teams pagen
+
+### Stand up 1/19 
+--- Gjort snygga bilder till hemsidan, 
+--- Ny text för The Blockchain sektionen
+--- Fixat footer och animationer för lend
+--- lagt till Lend och Repay sidor
+--- Lagt till loan terms i Borrow sidan
