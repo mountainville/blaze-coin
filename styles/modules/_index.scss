@@ -102,6 +102,7 @@ $darkBlue: #35375a;
 }
 
 .ix-coin {
+  display: flex;
   background-color: #5c4ae4;
   border-radius: 1rem;
   padding: 3rem;
@@ -109,6 +110,7 @@ $darkBlue: #35375a;
   min-width: 18rem;
   overflow: hidden;
   transition: ease 0.2s !important;
+  justify-content: center;
 }
 
 .ix-coin.ix-2 {
@@ -145,6 +147,6 @@ $darkBlue: #35375a;
   color: white;
   font-size: medium;
   font-weight: 600;
-  border-radius: 10px;  
-  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
 }
