@@ -2,14 +2,14 @@
   background-image: url("/images/roadmapBG.jpg");
   height: 100%;
   width: 100%;
-  position:relative;
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} 
-#rmp-BG{
-  height:100vh;
-} 
+}
+#rmp-BG {
+  height: 100vh;
+}
 
 /* Timeline Container */
 .rmp-timeline {
@@ -27,6 +27,8 @@
 .rmp-card {
   position: relative;
   max-width: 5800px;
+  height: 5rem;
+  transition: ease 1s;
 }
 
 /* setting padding based on even or odd */
@@ -78,8 +80,15 @@
 .rmp-info {
   display: flex;
   flex-direction: column;
-  background: rgb(105,20,131);
-  background: linear-gradient(90deg, rgba(4,0,59,0.80) 5%, rgba(130,21,53,0.80) 30%, rgba(105,20,131,0.80) 55%, rgba(130,20,81,0.80) 75%, rgba(29,23,126,0.80) 95%); 
+  background: rgb(105, 20, 131);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 0, 59, 0.8) 5%,
+    rgba(130, 21, 53, 0.8) 30%,
+    rgba(105, 20, 131, 0.8) 55%,
+    rgba(130, 20, 81, 0.8) 75%,
+    rgba(29, 23, 126, 0.8) 95%
+  );
   border-radius: 25px;
   padding: 10px;
 }
@@ -97,8 +106,15 @@
   position: absolute;
   width: 12px;
   height: 12px;
-  background: rgb(105,20,131);
-  background: linear-gradient(90deg, rgba(4,0,59,0.80) 5%, rgba(130,21,53,0.80) 30%, rgba(105,20,131,0.80) 55%, rgba(130,20,81,0.80) 75%, rgba(29,23,126,0.80) 95%); 
+  background: rgb(105, 20, 131);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 0, 59, 0.8) 5%,
+    rgba(130, 21, 53, 0.8) 30%,
+    rgba(105, 20, 131, 0.8) 55%,
+    rgba(130, 20, 81, 0.8) 75%,
+    rgba(29, 23, 126, 0.8) 95%
+  );
   border-radius: 999px;
   border: 2px solid white;
 }
@@ -116,4 +132,8 @@
 /* setting dot to the right if the card is odd */
 .rmp-card:nth-child(even) > .rmp-info > .rmp-title::before {
   right: -30px;
+}
+
+.extraInfo {
+  height: 11rem;
 }
