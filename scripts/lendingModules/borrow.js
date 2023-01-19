@@ -23,12 +23,7 @@ let borrow = `
                         <h4> Expected interest: 5% </h4>
                     </div>
                 <div class="lending-container-borrow-credentials">
-                    <h3>Enter Your Credentials...</h3>
-                    <label for="name">Username</label>
-                    <input id="username" type="text" placeholder="JACOB"/>
-                    <label for="password">Password</label>
-                    <input id="password" type="password" placeholder="********"/>
-                    <h3>...or Verify Wallet Connection</h3>
+                    <h3>Verify Wallet Connection</h3>
                     <button>Authorize Wallet</button>
                     <h3>Execute Transaction</h3>
                     <button id="lending-execute-button">Execute</button>
