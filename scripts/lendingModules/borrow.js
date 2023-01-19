@@ -24,7 +24,7 @@ let borrow = `
                     </div>
                 <div class="lending-container-borrow-credentials">
                     <h3>Verify Wallet Connection</h3>
-                    <button>Authorize Wallet</button>
+                    <button id="authorizeBtn">Authorize Wallet</button>
                     <h3>Execute Transaction</h3>
                     <button id="lending-execute-button">Execute</button>
                 </div>
