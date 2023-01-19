@@ -13,7 +13,7 @@ let borrow = `
                 <h3>Collateral</h3>
                     <input type="text" placeholder="e.g 1 000 000 SQR" />
                     <h3> Borrow term </h3>
-                    <div class="liquidityTerm2">
+                    <div class="liquidityTerm">
                         <button id="borrow1M" style="background-color: rgb(51, 74, 78);">30 Days</button>
                         <button id="borrow3M" style="background-color: rgb(51, 74, 78);">90 Days</button>
                         <button id="borrow6M" style="background-color: rgb(51, 74, 78);">180 Days</button>
