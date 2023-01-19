@@ -13,6 +13,7 @@ const executeBorrowButton = document.getElementById('execute-borrow-button');
 const executeLendButton = document.getElementById('execute-lend-button');
 const executeRepayButton = document.getElementById('execute-repay-button');
 
+let authorizeBtn = document.getElementById('authorizeBtn');
 // loan terms for Lend Page
 let liquidityTerm = document.getElementById("liquidityTerm");
 let lend1M = document.getElementById("lend1M");
@@ -33,6 +34,8 @@ const username = document.getElementById('username');
 // Function: change interface to "Borrow" page
 borrowButton.addEventListener('click', () => {
     borrowContainer.innerHTML= borrow();
+    authorizeBtn = document.getElementById('authorizeBtn');
+    loadAuthBtn();
     // borrowPage.style.display = 'block';
     // lendPage.style.display = 'none';
     // repayPage.style.display = 'none';
@@ -49,6 +52,8 @@ lendButton.addEventListener('click', () => {
     lend12M = document.getElementById("lend12M");
     lendBtnArr = [lend1M, lend3M, lend6M, lend12M];
     addLendTermListeners();
+    authorizeBtn = document.getElementById('authorizeBtn');
+    loadAuthBtn();
 });
 
 // Function: change interface to "Repay" page
@@ -60,13 +65,20 @@ repayButton.addEventListener('click', () => {
 });
 
 // Function that verifies wallet connection
-    const wallet = async () => {
-        if (typeof window.ethereum !== 'undefined') {
-            alert('Wallet verified!');
-            return true;
-        } 
-    }    
 
+    function loadAuthBtn () {
+        authorizeBtn.addEventListener('click', () =>  {
+            loadWeb3();
+        })
+    }
+
+    async function loadWeb3() {
+        if (window.ethereum) {
+          window.web3 = new Web3(window.ethereum);
+          window.ethereum.enable();
+        }
+    }
+    
 // Function that executes Borrow when conditions are met
 /* executeBorrowButton.addEventListener('click', () => {
     if (verifyCredentials() || verifyWalletConnection()) {
