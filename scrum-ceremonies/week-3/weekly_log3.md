@@ -21,3 +21,4 @@
 --- Fixat footer och animationer för lend
 --- lagt till Lend och Repay sidor
 --- Lagt till loan terms i Borrow sidan
+--- Added tons of tiny tasks to final project cleanup
