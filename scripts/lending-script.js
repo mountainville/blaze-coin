@@ -22,23 +22,11 @@ let lend6M = document.getElementById("lend6M");
 let lend12M = document.getElementById("lend12M");
 let lendBtnArr = [lend1M, lend3M, lend6M, lend12M];
 
-// Definition of pages
-const borrowPage = document.getElementById('borrow-container');
-const lendPage = document.getElementById('lend-container');
-const repayPage = document.getElementById('repay-container');
-
-// Definition of inputs
-const password = document.getElementById('password');
-const username = document.getElementById('username');
-
 // Function: change interface to "Borrow" page
 borrowButton.addEventListener('click', () => {
     borrowContainer.innerHTML= borrow();
     authorizeBtn = document.getElementById('authorizeBtn');
     loadAuthBtn();
-    // borrowPage.style.display = 'block';
-    // lendPage.style.display = 'none';
-    // repayPage.style.display = 'none';
 });
 
 // FUnction: change interface to "Lend" page
@@ -59,35 +47,20 @@ lendButton.addEventListener('click', () => {
 // Function: change interface to "Repay" page
 repayButton.addEventListener('click', () => {
     borrowContainer.innerHTML = repay();
-    //borrowPage.style.display = 'none';
-    //lendPage.style.display = 'none';
-    //repayPage.style.display = 'block';
 });
-
-// Function that verifies wallet connection
 
     function loadAuthBtn () {
         authorizeBtn.addEventListener('click', () =>  {
             loadWeb3();
         })
-    }
+    };
 
     async function loadWeb3() {
         if (window.ethereum) {
           window.web3 = new Web3(window.ethereum);
           window.ethereum.enable();
         }
-    }
-    
-// Function that executes Borrow when conditions are met
-/* executeBorrowButton.addEventListener('click', () => {
-    if (verifyCredentials() || verifyWalletConnection()) {
-        alert('Transaction executed!');
-        return true;
-    }   
-    alert('Transaction not executed!');
-    return false;
-}); */
+    };
 
 function addLendTermListeners () {
     //console.log("starting function");
@@ -113,10 +86,5 @@ function addLendTermListeners () {
     }
 }
 
-
-
-// Function that executes Lend when conditions are met
-
-// Function that executes Repay when conditions are met
 
 
