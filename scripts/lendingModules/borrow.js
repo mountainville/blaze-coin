@@ -10,17 +10,18 @@ let borrow = `
                 <input type="text" placeholder="e.g 1 000 000 SQR" />
             </div>
             <div class="lending-container-borrow-collateral">
-                <h3>Collateral</h3>
-                    <input type="text" placeholder="e.g 1 000 000 SQR" />
+                <h3>Collateral (min 100%) </h3>
+                    <input type="text" placeholder="e.g 100USDT" />
+                    <h3> SQR available to borrow:</h3>
+                    <h4> 12481294 SQL </h4>
+                    <h4> Expected interest: 5% </h4>
                     <h3> Borrow term </h3>
                     <div class="liquidityTerm">
                         <button id="borrow1M" style="background-color: rgb(51, 74, 78);">30 Days</button>
                         <button id="borrow3M" style="background-color: rgb(51, 74, 78);">90 Days</button>
                         <button id="borrow6M" style="background-color: rgb(51, 74, 78);">180 Days</button>
                         <button id="borrow12" style="background-color: rgb(51, 74, 78);">360 Days</button>
-                        <h3> SQR available to borrow:</h3>
-                        <h4> 12481294 SQL </h4>
-                        <h4> Expected interest: 5% </h4>
+                        
                     </div>
                 <div class="lending-container-borrow-credentials">
                     <h3>Verify Wallet Connection</h3>

@@ -6,15 +6,11 @@
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  min-height: 85vh;
-  width: 98vw;
+ // min-height: min-content;
+  width: 100vw;
   transition: color 0.5s ease-out;
-  padding-bottom: 25vh;
-}
-
-.lending-body > footer {
-  position: absolute;
-  bottom: 0px;
+  //padding-bottom: 25vh;
+  overflow-x: hidden;
 }
 
 .liquidityTerm {
@@ -154,7 +150,6 @@
 // Repay interface
 
 .lending-container-borrow {
-  height: 18rem;
   transition: 2s ease;
 }
 
